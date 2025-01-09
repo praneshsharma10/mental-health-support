@@ -58,8 +58,11 @@ export default function Assess() {
     const average = total / answers.length
 
     if (average < 1) return "Your mental health appears to be in good condition. Keep up the good work!"
+
+
     if (average < 2) return "You may be experiencing mild stress. Consider incorporating some stress-reduction techniques into your daily routine."
     if (average < 3) return "You may be experiencing moderate levels of stress or anxiety. It might be helpful to talk to a mental health professional."
+   
     return "Your responses indicate you may be experiencing significant stress or mental health challenges. We strongly recommend reaching out to a mental health professional for support."
   }
 
@@ -68,14 +71,14 @@ export default function Assess() {
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold text-blue-600 mb-8">Assessment Results</h1>
         <p className="text-xl text-gray-600 mb-4">{calculateResult()}</p>
-        <p className="text-gray-600">Remember, this assessment is not a diagnostic tool. If you are concerned about your mental health, please consult with a qualified mental health professional.</p>
+        <p className="text-gray-600">Remember,  this assessment is not a diagnostic tool. If you are concerned about your mental health, please consult with a qualified mental health professional.</p>
       </div>
     )
   } 
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-blue-600 mb-8">Mental Health Self-Assessment</h1>
+      <h1 className="text-3xl font-bold text-blue-600 mb-8">Self-Assessment</h1>
       <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4">Question {currentQuestion + 1} of {questions.length}</h2>
         <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">{questions[currentQuestion].question}</p>
