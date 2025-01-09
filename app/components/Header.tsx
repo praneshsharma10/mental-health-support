@@ -1,20 +1,3 @@
-// import Link from 'next/link'
-
-// export default function Header() {
-//   return (
-//     <header className="bg-white shadow-md">
-//       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-//         <Link href="/" className="text-2xl font-bold text-blue-600">
-//           Mental Health Support
-//         </Link>
-//         <p className="text-gray-600">Your Mental Health, Our Priority</p>
-//         <Link href="/support" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
-//           Get Support Now
-//         </Link>
-//       </div>
-//     </header>
-//   )
-// }
 
 
 // 'use client'
